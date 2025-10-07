@@ -1,0 +1,29 @@
+.HeaderItem {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.HeaderNav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.HeaderNav li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    margin: 0 15px;
+    font-size: 12px;
+}
+
+.Counseling{
+    flex-direction: row; 
+}
+header{
+    height: 70px;
+}
