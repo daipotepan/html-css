@@ -2,6 +2,11 @@
     display: flex;
     justify-content: space-between; 
     align-items: center;
+    padding: 0 15px;
+}
+.HeaderIcon img{
+    height: 20px;
+    width: auto;
 }
 
 .HeaderNav ul{
@@ -21,9 +26,67 @@
     font-size: 12px;
 }
 
-.Counseling{
-    flex-direction: row; 
+.HeaderNav li:hover{
+    opacity: 0.7;
 }
+.CounselingNav{
+    flex-direction: row;
+}
+.CounselingNav span{
+    font-size: 15px;
+    background-color: orange;
+    padding: 8px 16px;
+    font-weight: 700;
+    border-radius: 16px;
+    color: #ffffff;
+}
+
 header{
     height: 70px;
+}
+
+.No1Icon, .BackImg, .TopTri, .BottomTri, .MainText, .SupportInfo{
+    position: absolute;
+}
+
+.MainText{
+    display: block;
+    font-size: 50px;
+    z-index: 1;
+}
+
+.SupportInfo{
+    display: block;
+    font-size: 12px;
+}
+
+.No1Icon{
+    width: 204px;
+    height: 204px;
+    top: 150px;
+    right: 500px;
+    z-index: 1;
+}
+
+.BackImg img{
+    height: auto;
+    width: 775px;
+}
+
+.BackImg{
+    top: 70px;
+    right: 0;
+    z-index: 0;
+}
+
+.TopTri{
+    top: 70px;
+    left: 0;
+    z-index: 0;
+}
+
+.BottomTri{
+    bottom: 0;
+    right: 0;
+    z-index: 0;
 }
