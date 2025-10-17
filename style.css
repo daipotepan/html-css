@@ -29,6 +29,7 @@
 .HeaderNav li:hover{
     opacity: 0.7;
 }
+
 .CounselingNav{
     flex-direction: row;
 }
@@ -45,19 +46,46 @@ header{
     height: 70px;
 }
 
-.No1Icon, .BackImg, .TopTri, .BottomTri, .MainText, .SupportInfo{
-    position: absolute;
+.MainText, .SupportInfo, .CounselingButton{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
 }
 
 .MainText{
-    display: block;
     font-size: 50px;
     z-index: 1;
 }
 
+.CounselingButton{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: orange;
+    border-radius: 30px;
+}
+
 .SupportInfo{
-    display: block;
     font-size: 12px;
+    z-index: 1;
+}
+
+.TextContents{
+    width: fit-content;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+}
+
+.No1Icon, .BackImg, .TopTri, .BottomTri, .BackgroundDecoration{
+    position: absolute;
 }
 
 .No1Icon{
@@ -76,9 +104,14 @@ header{
 .BackImg{
     top: 70px;
     right: 0;
-    z-index: 0;
+    z-index: 1;
 }
 
+.BackgroundDecoration{
+    top: 100px;
+    left: 0;
+    z-index: 0;
+}
 .TopTri{
     top: 70px;
     left: 0;
@@ -89,4 +122,62 @@ header{
     bottom: 0;
     right: 0;
     z-index: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    header{
+        height: auto;
+    }
+
+    .HeaderIcon{
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .HeaderNav{
+        display: none;
+    }
+
+    .BottomTri{
+        display: none;
+    }
+
+    .BackImg img{
+        height: auto;
+        width: 350px;
+    }
+
+    .BackgroundDecoration img{
+        height: auto;
+        width: 300px;
+    }
+
+    .TopTri img{
+        height: auto;
+        width: 150px;
+    }
+
+    .MainText{
+        font-size: 22px;
+    }
+    
+    .SupportInfo{
+        font-size: 12px;
+    }
+
+    .TextContents{
+        top: 400px;
+        left: 10px;
+    }
+
+    .No1Icon{
+        top: 350px;
+        left: 230px;
+    }
+
+    .No1Icon img{
+        height: 100px;
+        width: auto;
+    }
 }
