@@ -104,13 +104,13 @@ header{
 .BackImg{
     top: 70px;
     right: 0;
-    z-index: 1;
+    z-index: 0;
 }
 
 .BackgroundDecoration{
     top: 100px;
     left: 0;
-    z-index: 0;
+    z-index: -1;
 }
 .TopTri{
     top: 70px;
